@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-BLE Device Controller</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #numberPad {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        #numberPad button {
+            width: 200px; /* Fixed width */
+            height: 100px; /* Fixed height */
+            font-size: 25px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #numberPad button:hover {
+            background-color: #ddd;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Multi-BLE Device Controller</h1>
+    <button onclick="connectToDevice()">Connect to a Device</button>
+    <button onclick="disconnectAllDevices()">Disconnect All</button>
+    <div id="numberPad">
+        <button onclick="sendNumber(1)">1</button>
+        <button onclick="sendNumber(2)">2</button>
+        <button onclick="sendNumber(3)">3</button>
+        <button onclick="sendNumber(4)">4</button>
+        <button onclick="sendNumber(5)">5</button>
+        <button onclick="sendNumber(6)">6</button>
+        <button onclick="sendNumber(7)">7</button>
+        <button onclick="sendNumber(8)">8</button>
+        <button onclick="sendNumber(9)">9</button>
+        <button onclick=></button>
+        <button onclick="sendNumber(0)">0</button>
+        <button onclick="sendRandomNumber()">Random</button>
+        
+        
+    </div>
+    <script src="script4.js"></script>
+</body>
+</html>
